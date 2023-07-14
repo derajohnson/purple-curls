@@ -1,0 +1,16 @@
+name = "purple-curls"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "purple-curls_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "purple-curls.wasm"
+command = "npm run build:release"
